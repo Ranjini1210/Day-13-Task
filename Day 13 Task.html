@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Box and Text</title>
+    <style>
+      .responsive-box {
+        width: 80vw;
+        max-width: 600px;
+        background-color: lightblue;
+        padding: 20px;
+        margin: 20px auto;
+        border: 2px solid #333;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .scalable-heading {
+        font-size: 5vw;
+        margin: 0;
+      }
+
+      @media (min-width: 1200px) {
+        .scalable-heading {
+          font-size: 60px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          background-color: lightcoral;
+        }
+        .responsive-box {
+          background-color: lightgoldenrodyellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive-box">
+      <h1 class="scalable-heading">Scalable Heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil soluta
+        unde eius obcaecati nobis recusandae impedit eos voluptatibus quibusdam
+        culpa accusamus consequuntur, nostrum doloremque quia incidunt optio
+        reprehenderit libero.
+      </p>
+    </div>
+  </body>
+</html>
